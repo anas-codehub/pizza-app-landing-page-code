@@ -67,7 +67,7 @@ const ProductCard = ({ product }: PropTypes) => {
       {/* MODAL */}
       <Modal isOpen={isOpen} onOpenChange={onOpenChange}>
         <ModalContent className="max-w-4xl bg-[#fff7ec] rounded-2xl p-0 overflow-hidden">
-          {(onClose) => (
+          {() => (
             <>
               <ModalBody className="p-0">
                 <div className="flex flex-col md:flex-row">

@@ -2,7 +2,6 @@ import { cn } from "@/lib/utils";
 import { Button } from "@heroui/react";
 import { CircleCheck } from "lucide-react";
 import Image from "next/image";
-import React, { useState } from "react";
 
 interface Topping {
   id: string;
@@ -23,7 +22,6 @@ const ToppingCard: React.FC<ToppingCardProps> = ({
   selectToppings,
   handleCheckBoxCheck,
 }: ToppingCardProps) => {
-  const [selected, setSelected] = useState("1");
   const isCurrentSelected = selectToppings.some(
     (element) => element.id === topping.id
   );
